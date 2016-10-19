@@ -1,0 +1,132 @@
+{
+  "name": "heathandliz",
+  "title": "heathandliz.com",
+  "version": "0.1.0",
+  "description": "Our Wedding Website",
+  "author": "Heath Mills <https://twitter.com/mills_heath>",
+  "homepage": "https://github.com/dmnsgn/gulp-frontend-boilerplate",
+  "license": "MIT",
+  "vendors": [
+    "./node_modules/jquery/dist/jquery.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.js"
+  ],
+  "napa": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.5",
+    "eslint-plugin-import": "^2.0.1",
+    "jquery": "^3.1.1",
+    "normalize.css": "git://github.com/necolas/normalize.css.git#3.0.3",
+    "sass-easing": "^1.0.3",
+    "sass-font-face": "^1.0.1"
+  },
+  "devDependencies": {
+    "aliasify": "^2.0.0",
+    "autoprefixer": "^6.3.x",
+    "babel-core": "^6.7.x",
+    "babel-preset-es2015": "^6.6.x",
+    "babelify": "^7.3.0",
+    "brfs": "^1.4.3",
+    "browser-sync": "^2.12.x",
+    "browserify": "^13.0.x",
+    "chalk": "^1.1.x",
+    "css-mqpacker": "^5.0.x",
+    "csswring": "^5.0.x",
+    "del": "^2.2.x",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.x",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "favicons": "^4.7.x",
+    "fontmin": "^0.9.x",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cache": "^0.4.x",
+    "gulp-changed": "^1.3.x",
+    "gulp-filter": "^4.0.x",
+    "gulp-header": "^1.7.x",
+    "gulp-imagemin": "^3.0.x",
+    "gulp-mocha": "^3.0.x",
+    "gulp-newer": "^1.1.x",
+    "gulp-notify": "^2.2.x",
+    "gulp-postcss": "^6.1.x",
+    "gulp-preprocess": "^2.0.x",
+    "gulp-rename": "^1.2.x",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-sitemap": "^4.0.x",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.x",
+    "gulp-util": "^3.0.x",
+    "gulp-w3cjs": "^1.2.x",
+    "gulp-watch": "^4.3.x",
+    "gulp.spritesmith": "^6.2.x",
+    "imagemin-pngquant": "^5.0.x",
+    "minimist": "^1.2.x",
+    "napa": "^2.3.x",
+    "postcss": "^5.2.4",
+    "pretty-hrtime": "^1.0.x",
+    "psi": "^2.0.x",
+    "stylelint": "^7.3.1",
+    "stylelint-config-suitcss": "^8.0.0",
+    "uglify-js": "^2.6.x",
+    "vinyl-buffer": "^1.0.x",
+    "vinyl-source-stream": "^1.1.x",
+    "watchify": "^3.7.x"
+  },
+  "scripts": {
+    "install": "napa",
+    "init": "npm i inquirer@1.0.3 chalk cli-spinner del babel-cli babel-preset-es2015 && babel-node ./boilerplate/init/index.js",
+    "dev": "gulp --env dev",
+    "prod": "NODE_ENV=production gulp --env prod"
+  },
+  "directories": {
+    "src": "./src",
+    "dist": "./dist",
+    "test": "./test"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "comma-dangle": 0
+    }
+  },
+  "config": {
+    "verbose": false,
+    "port": 3000,
+    "browsers": [
+      "last 2 version",
+      "ios 6",
+      "android 4"
+    ],
+    "prodURL": "https://heathandliz.com",
+    "shareImageURL": "https://heathandliz.comstatic/share.png",
+    "twitterHandle": "@mills_heath",
+    "analyticsUA": "UA-XXXXX-X",
+    "developerURL": "http://heathmills.net"
+  },
+  "extensions": {
+    "scripts": "js",
+    "styles": "scss"
+  },
+  "browserify": {
+    "transform": [
+      "aliasify",
+      "brfs",
+      "babelify"
+    ]
+  },
+  "aliasify": {
+    "aliases": {
+      "root": "./src/scripts",
+      "views": "./src/scripts/views"
+    }
+  }
+}
