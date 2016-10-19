@@ -1,6 +1,7 @@
+# heathandliz
 Wedding Website
 
-## Licence
+## Lisence
 
 MIT
-# heathandliz
+

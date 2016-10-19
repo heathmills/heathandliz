@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "description": "Our Wedding Website",
   "author": "Heath Mills <https://twitter.com/mills_heath>",
-  "homepage": "https://github.com/dmnsgn/gulp-frontend-boilerplate",
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heathmills/heathandliz.git"
+  },
   "license": "MIT",
   "vendors": [
     "./node_modules/jquery/dist/jquery.js",
