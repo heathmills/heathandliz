@@ -1,0 +1,52 @@
+@mixin preload-box {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#preloader {
+
+  position: fixed;
+  @include preload-box;
+  z-index: 9999;
+  background-color: #f6f6f6;
+
+  &.background_image {
+    background-image: url("http://placehold.it/1920x1080");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .black-overlay {
+
+    position: absolute;
+    @include preload-box;
+    background-color: #000;
+    opacity: 0.6;
+  }
+
+  .white-overlay {
+
+    position: absolute;
+    @include preload-box;
+    background-color: #fff;
+    opacity: 0.6;
+  }
+
+  .spinner-animation {
+
+    transform-style: preserve-3d;
+    animation: pace-3d-spinner linear infinite 2s;
+  }
+}
+
+@keyframes pace-3d-spinner {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
