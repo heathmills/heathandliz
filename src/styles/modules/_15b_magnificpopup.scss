@@ -1,0 +1,22 @@
+.mfp-bg {
+  z-index: 2000;
+  -webkit-transform: translateZ(0);
+}
+
+.mfp-wrap {
+  z-index: 2001;
+}
+
+.mfp-content {
+  z-index: 2003;
+}
+
+.mfp-preloader {
+  z-index: 2002;
+}
+
+button {
+  &.mfp-close, &.mfp-arrow {
+    z-index: 2003;
+  }
+}

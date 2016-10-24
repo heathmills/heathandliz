@@ -1,0 +1,43 @@
+#counting-down {
+  text-align: center;
+  color: #FFF;
+  font-family: 'Pacifico';
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  padding-right: 30px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+#counting {
+  font-size: 65px;
+  line-height: 50px;
+}
+
+#down {
+  font-size: 55px;
+  line-height: 65px;
+}
+
+.simple-countdown {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 25px;
+  &.is-countdown {
+    border: none;
+    background-color: transparent;
+    color: #FFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+  }
+  .countdown-amount {
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .countdown-period {
+    display: inline-block;
+    font-size: 18px;
+  }
+}

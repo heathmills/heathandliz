@@ -1,0 +1,140 @@
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  &.frame-border {
+    background-color: #FFF;
+    border: 18px solid #FFF;
+  }
+  img {
+    width: 100%;
+  }
+  .layer {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &.wh100 {
+      width: 100%;
+      height: 100%;
+    }
+    &.wh95 {
+      width: 95%;
+      height: 95%;
+    }
+    &.second-image {
+      opacity: 0;
+    }
+    &.opacity-black-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      opacity: 0.3;
+    }
+    &.hidden-black-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+    }
+    &.photo-caption {
+      opacity: 1;
+    }
+    &.hidden-photo-caption {
+      opacity: 0;
+    }
+    &.border-photo-caption {
+      opacity: 1;
+      border: 1px solid #FFF;
+    }
+    &.hidden-border-photo-caption {
+      opacity: 0;
+      border: 1px solid #FFF;
+    }
+    &.link {
+      opacity: 1;
+    }
+    &.hidden-link {
+      opacity: 0;
+    }
+  }
+  &:hover .layer.hover-animation {
+    &.fade-in {
+      opacity: 1;
+    }
+    &.half-fade-in {
+      opacity: 0.3;
+    }
+    &.fade-out {
+      opacity: 0;
+    }
+  }
+  img.hover-animation, &:hover img.hover-animation, .layer.hover-animation {
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    /*The transition will be disabled on script.js for tablet/mobile*/
+  }
+  &:hover {
+    .layer.hover-animation {
+      -webkit-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      /*The transition will be disabled on script.js for tablet/mobile*/
+      &.duration1 {
+        transition-duration: 0.5s;
+      }
+    }
+    img.hover-animation.duration1 {
+      transition-duration: 0.5s;
+    }
+    .layer.hover-animation.duration2, img.hover-animation.duration12 {
+      transition-duration: 1s;
+    }
+    .layer.hover-animation.duration3, img.hover-animation.duration3 {
+      transition-duration: 1.5s;
+    }
+    .layer.hover-animation.duration4, img.hover-animation.duration4 {
+      transition-duration: 2s;
+    }
+    .layer.hover-animation.duration5, img.hover-animation.duration5 {
+      transition-duration: 2.5s;
+    }
+    .layer.hover-animation.delay1, img.hover-animation.delay1 {
+      transition-delay: 0.5s;
+    }
+    .layer.hover-animation.delay2, img.hover-animation.delay2 {
+      transition-delay: 1s;
+    }
+    .layer.hover-animation.delay3, img.hover-animation.delay3 {
+      transition-delay: 1.5s;
+    }
+    .layer.hover-animation.delay4, img.hover-animation.delay4 {
+      transition-delay: 2s;
+    }
+    .layer.hover-animation.delay5 {
+      transition-delay: 2.5s;
+    }
+    img.hover-animation {
+      &.delay5 {
+        transition-delay: 2.5s;
+      }
+      &.image-zoom-in {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      &.image-zoom-rotate {
+        -webkit-transform: rotate(7deg) scale(1.1);
+        -ms-transform: rotate(7deg) scale(1.1);
+        -o-transform: rotate(7deg) scale(1.1);
+        transform: rotate(7deg) scale(1.1);
+      }
+      &.image-fade-out {
+        opacity: 0;
+      }
+    }
+  }
+}

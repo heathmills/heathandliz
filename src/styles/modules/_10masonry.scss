@@ -1,0 +1,123 @@
+.masonry-col.w100 {
+  width: 100%;
+}
+
+.three-col {
+  .grid-sizer {
+    width: 33.33%;
+  }
+  .gutter-sizer {
+    width: 0;
+  }
+  .masonry-col {
+    &.w33 {
+      width: 33.33%;
+    }
+    &.w66 {
+      width: 66.67%;
+    }
+  }
+  &.with-gutter {
+    .grid-sizer {
+      width: 31%;
+    }
+    .gutter-sizer {
+      width: 3.5%;
+    }
+    .masonry-col {
+      margin-bottom: 30px;
+      &.w33 {
+        width: 31%;
+      }
+      &.w66 {
+        width: 62%;
+      }
+    }
+  }
+}
+
+.four-col {
+  .grid-sizer {
+    width: 25%;
+  }
+  .gutter-sizer {
+    width: 0;
+  }
+  .masonry-col {
+    &.w25 {
+      width: 25%;
+    }
+    &.w50 {
+      width: 50%;
+    }
+    &.w75 {
+      width: 75%;
+    }
+  }
+  &.with-gutter {
+    .grid-sizer {
+      width: 23%;
+    }
+    .gutter-sizer {
+      width: 2.666%;
+    }
+    .masonry-col {
+      margin-bottom: 25px;
+      &.w25 {
+        width: 23%;
+      }
+      &.w50 {
+        width: 46%;
+      }
+      &.w75 {
+        width: 69%;
+      }
+    }
+  }
+}
+
+.five-col {
+  .grid-sizer {
+    width: 20%;
+  }
+  .gutter-sizer {
+    width: 0;
+  }
+  .masonry-col {
+    &.w20 {
+      width: 20%;
+    }
+    &.w40 {
+      width: 40%;
+    }
+    &.w60 {
+      width: 60%;
+    }
+    &.w80 {
+      width: 80%;
+    }
+  }
+  &.with-gutter {
+    .grid-sizer {
+      width: 18%;
+    }
+    .gutter-sizer {
+      width: 2.5%;
+    }
+    .masonry-col {
+      margin-bottom: 25px;
+      &.w20 {
+        width: 18%;
+      }
+      &.w40 {
+        width: 36%;
+      }
+      &.w60 {
+        width: 54%;
+      }
+      &.w80 {
+        width: 72%;
+      }
+    }
+  }
+}

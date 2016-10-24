@@ -1,0 +1,74 @@
+#gallery-section {
+  padding: 140px 0;
+  .photo-item {
+    margin-bottom: 30px;
+  }
+}
+
+h2#dont-miss-it-title {
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-family: 'Pacifico', cursive;
+}
+
+.circle-countdown {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25px;
+  &.is-countdown {
+    background-color: transparent;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+  }
+  .countdown-amount {
+    background-color: #f0394d;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: block;
+    padding-top: 22px;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .countdown-period {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+#more-events {
+  padding: 140px 0;
+}
+
+#events-carousel .item {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+#groomsmen-section {
+  padding: 140px 0;
+}
+
+.groomsmen-item {
+  margin-bottom: 60px;
+}
+
+#bridesmaid-section {
+  padding: 140px 0;
+}
+
+.bridesmaid-item {
+  margin-bottom: 60px;
+}
+
+#gift-section {
+  padding: 140px 0;
+  background-color: #FFF;
+}
+
+#rsvp-section {
+  padding: 140px 0;
+}

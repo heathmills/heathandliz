@@ -1,27 +1,56 @@
 {
   "name": "heathandliz",
   "title": "heathandliz.com",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Our Wedding Website",
   "author": "Heath Mills <https://twitter.com/mills_heath>",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/heathmills/heathandliz.git"
   },
   "license": "MIT",
   "vendors": [
     "./node_modules/jquery/dist/jquery.js",
+    "./node_modules/pace-progress/pace.js",
     "./node_modules/tether/dist/js/tether.js",
-    "./node_modules/bootstrap/dist/js/bootstrap.js"
+    "./node_modules/bootstrap/dist/js/bootstrap.js",
+    "./node_modules/modernizr/src/modernizr.js",
+    "./node_modules/device-detect.js/lib/device.js",
+    "./node_modules/tinynav/dist/tinynav.js",
+    "./node_modules/jquery-smooth-scroll/jquery.smooth-scroll.js",
+    "./node_modules/flexslider/jquery.flexslider.js",
+    "./node_modules/jquery-sticky/jquery.sticky.js",
+    "./node_modules/jquery-waypoints/waypoints.js",
+    "./node_modules/vide/dist/jquery.vide.js",
+    "./node_modules/masonry-layout/dist/masonry.pkgd.js",
+    "./node_modules/jquery-countdown/dist/jquery.countdown.js",
+    "./node_modules/magnific-popup/dist/jquery.magnific-popup.js",
+    "./node_modules/owl-carousel-2-beta/dist/owl.carousel.js",
+    "./node_modules/markerwithlabel/index.js"
   ],
   "napa": {},
   "dependencies": {
+    "animate.css": "^3.5.2",
     "bootstrap": "^4.0.0-alpha.5",
+    "device-detect.js": "^0.2.7",
     "eslint-plugin-import": "^2.0.1",
+    "flexslider": "^2.6.3",
     "jquery": "^3.1.1",
+    "jquery-countdown": "^2.2.0",
+    "jquery-smooth-scroll": "^2.0.0",
+    "jquery-sticky": "^1.0.4",
+    "jquery-waypoints": "^2.0.5",
+    "magnific-popup": "^1.1.0",
+    "masonry-layout": "^4.1.1",
+    "modernizr": "^3.3.1",
     "normalize.css": "git://github.com/necolas/normalize.css.git#3.0.3",
+    "owl-carousel-2-beta": "^2.1.2",
+    "pace-progress": "^1.0.2",
+    "pure-css-loader": "^1.1.0",
     "sass-easing": "^1.0.3",
-    "sass-font-face": "^1.0.1"
+    "sass-font-face": "^1.0.1",
+    "tinynav": "^1.3.0",
+    "vide": "^0.5.0"
   },
   "devDependencies": {
     "aliasify": "^2.0.0",
@@ -65,6 +94,7 @@
     "gulp-watch": "^4.3.x",
     "gulp.spritesmith": "^6.2.x",
     "imagemin-pngquant": "^5.0.x",
+    "markerwithlabel": "^2.0.0",
     "minimist": "^1.2.x",
     "napa": "^2.3.x",
     "postcss": "^5.2.4",
@@ -78,8 +108,6 @@
     "watchify": "^3.7.x"
   },
   "scripts": {
-    "install": "napa",
-    "init": "npm i inquirer@1.0.3 chalk cli-spinner del babel-cli babel-preset-es2015 && babel-node ./boilerplate/init/index.js",
     "dev": "gulp --env dev",
     "prod": "NODE_ENV=production gulp --env prod"
   },
