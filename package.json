@@ -1,167 +1,60 @@
 {
   "name": "heathandliz",
-  "title": "heathandliz.com",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Our Wedding Website",
-  "author": "Heath Mills <https://twitter.com/mills_heath>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/heathmills/heathandliz.git"
+  "author": "Heath Mills",
+  "license": "ISC",
+  "scripts": {
+    "install": "napa"
   },
-  "license": "MIT",
-  "vendors": [
-    "./node_modules/jquery/dist/jquery.js",
-    "./node_modules/pace/pace.js",
-    "./node_modules/tether/dist/js/tether.js",
-    "./node_modules/bootstrap/dist/js/bootstrap.js",
-    "./node_modules/device-detect.js/lib/device.js",
-    "./node_modules/tinynav/dist/tinynav.js",
-    "./node_modules/jquery-smooth-scroll/jquery.smooth-scroll.js",
-    "./node_modules/flexslider/jquery.flexslider.js",
-    "./node_modules/jquery-sticky/jquery.sticky.js",
-    "./node_modules/jquery-waypoints/waypoints.js",
-    "./node_modules/vide/dist/jquery.vide.js",
-    "./node_modules/masonry-layout/dist/masonry.pkgd.js",
-    "./node_modules/countdown/jquery.plugin.js",
-    "./node_modules/countdown/jquery.countdown.js",
-    "./node_modules/magnific-popup/dist/jquery.magnific-popup.js",
-    "./node_modules/owlcarousel/dist/owl.carousel.js",
-    "./node_modules/markerwithlabel/index.js"
-  ],
   "napa": {
-    "countdown": "kbwood/countdown",
-    "owlcarousel": "OwlCarousel2/OwlCarousel2",
-    "Pace": "HubSpot/pace"
+    "jquery.countdown": "kbwood/countdown",
+    "parallaxjs": "pixelcog/parallax.js"
+  },
+  "devDependencies": {
+    "apache-server-configs": "^2.14.0",
+    "autoprefixer": "^6.5.2",
+    "babel-preset-es2015": "^6.18.0",
+    "browser-sync": "^2.17.6",
+    "cssnano": "^3.8.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-copy": "0.0.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-size": "^2.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "napa": "^2.3.0",
+    "postcss": "^5.2.5",
+    "postcss-import": "^8.2.0",
+    "psi": "^2.0.4",
+    "pump": "^1.0.1",
+    "run-sequence": "^1.2.2",
+    "sw-precache": "^4.2.1",
+    "sw-toolbox": "^3.4.0"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
-    "bootstrap": "^4.0.0-alpha.5",
-    "device-detect.js": "^0.2.7",
-    "flexslider": "^2.6.3",
-    "jquery": "^3.1.1",
-    "jquery-smooth-scroll": "^2.0.0",
-    "jquery-sticky": "^1.0.4",
-    "jquery-waypoints": "^2.0.5",
-    "magnific-popup": "^1.1.0",
-    "masonry-layout": "^4.1.1",
-    "modernizr": "^3.3.1",
-    "normalize.css": "git://github.com/necolas/normalize.css.git#3.0.3",
-    "pure-css-loader": "^1.1.0",
-    "sass-easing": "^1.0.3",
-    "sass-font-face": "^1.0.1",
-    "tinynav": "^1.3.0",
-    "vide": "^0.5.0"
-  },
-  "devDependencies": {
-    "aliasify": "^2.0.0",
-    "autoprefixer": "^6.3.x",
-    "babel-core": "^6.18.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babelify": "^7.3.0",
-    "bootstrap-loader": "^2.0.0-beta.12",
-    "brfs": "^1.4.3",
-    "browser-sync": "^2.12.x",
-    "browserify": "^13.1.1",
-    "chalk": "^1.1.x",
-    "css-loader": "^0.25.0",
-    "css-mqpacker": "^5.0.x",
-    "csswring": "^5.0.x",
-    "del": "^2.2.x",
-    "eslint": "^3.8.1",
-    "eslint-config-jquery": "^1.0.0",
-    "extract-text-webpack-plugin": "^2.0.0-beta.4",
-    "favicons": "^4.7.x",
-    "file-loader": "^0.9.0",
-    "fontmin": "^0.9.x",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-cache": "^0.4.x",
-    "gulp-changed": "^1.3.x",
-    "gulp-filter": "^4.0.x",
-    "gulp-header": "^1.7.x",
-    "gulp-imagemin": "^3.0.x",
-    "gulp-mocha": "^3.0.x",
-    "gulp-newer": "^1.1.x",
-    "gulp-notify": "^2.2.x",
-    "gulp-postcss": "^6.1.x",
-    "gulp-preprocess": "^2.0.x",
-    "gulp-rename": "^1.2.x",
-    "gulp-sass": "^2.3.2",
-    "gulp-sass-glob": "^1.0.6",
-    "gulp-sitemap": "^4.0.x",
+    "bootstrap": "^3.3.1",
+    "bootstrap-validator": "^0.6.0",
     "gulp-sourcemaps": "^2.2.0",
-    "gulp-uglify": "^2.0.x",
-    "gulp-util": "^3.0.x",
-    "gulp-w3cjs": "^1.2.x",
-    "gulp-watch": "^4.3.x",
-    "gulp.spritesmith": "^6.2.x",
-    "imagemin-pngquant": "^5.0.x",
-    "markerwithlabel": "^2.0.0",
-    "minimist": "^1.2.x",
-    "napa": "^2.3.x",
-    "node-sass": "^3.10.1",
-    "postcss": "^5.2.5",
-    "postcss-loader": "^1.0.0",
-    "pretty-hrtime": "^1.0.x",
-    "psi": "^2.0.x",
-    "resolve-url-loader": "^1.6.0",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1",
-    "stylelint": "^7.3.1",
-    "stylelint-config-primer": "^1.3.0",
-    "uglify-js": "^2.7.4",
-    "url-loader": "^0.5.7",
-    "vinyl-buffer": "^1.0.x",
-    "vinyl-source-stream": "^1.1.x",
-    "watchify": "^3.7.x",
-    "webpack": "^2.1.0-beta.25"
-  },
-  "scripts": {
-    "install": "napa",
-    "dev": "gulp --env dev",
-    "prod": "NODE_ENV=production gulp --env prod"
-  },
-  "directories": {
-    "src": "./src",
-    "dist": "./dist",
-    "test": "./test"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "jquery"
-  },
-  "config": {
-    "verbose": false,
-    "port": 3000,
-    "browsers": [
-      "last 2 version",
-      "ios 6",
-      "android 4"
-    ],
-    "prodURL": "https://heathandliz.com",
-    "shareImageURL": "https://heathandliz.comstatic/share.png",
-    "twitterHandle": "@mills_heath",
-    "analyticsUA": "UA-XXXXX-X",
-    "developerURL": "http://heathmills.net"
-  },
-  "extensions": {
-    "scripts": "js",
-    "styles": "scss"
-  },
-  "browserify": {
-    "transform": [
-      "aliasify",
-      "brfs",
-      "babelify"
-    ]
-  },
-  "aliasify": {
-    "aliases": {
-      "root": "./src/scripts",
-      "views": "./src/scripts/views"
-    }
+    "jquery-smooth-scroll": "^1.7.2",
+    "jquery-sticky": "^1.0.4",
+    "jquery.maskedinput": "^1.4.1",
+    "magnific-popup": "^1.1.0",
+    "map-icons": "^3.0.3",
+    "masonry-layout": "^4.1.1",
+    "npm-modernizr": "^2.8.3",
+    "owlcarousel": "^1.3.3",
+    "pace-js": "^1.0.2",
+    "tinynav": "^1.3.0",
+    "waypoints": "^4.0.1"
   }
 }
